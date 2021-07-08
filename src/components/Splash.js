@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Splash = () => {
+const Splash = (props) => {
     return ( 
     <div>
     <div className="heroImg" >

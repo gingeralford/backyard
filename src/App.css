@@ -16,6 +16,7 @@
   line-height: 2rem;
 }
 
+/* This is how I get the hamburger menu icon to be green */
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(60,160,46, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
@@ -25,8 +26,6 @@
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center;
-    /* height: 400px; */
-
     height: 100vh;
     width: 100vw;
     position: fixed; 
