@@ -19,7 +19,7 @@ const Sitebar = (props) => {
 
       <Navbar  bg="light" expand="xl" style={{zIndex: 5}}>
         <Navbar.Brand className="navstyle" href="#home">backyard</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" bg="dark"/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" bg="lite"/>
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav variant="main" className="navstyle mr-auto">
             <Nav.Link className="navstyle" variant="main" href="#home">messages</Nav.Link>
