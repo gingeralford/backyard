@@ -6,10 +6,32 @@
 
 .navstyle {
   font-family: 'Corben';
-  color: #3CA02E ;
+  color: #3CA02E !important;
   font-family: 'Corben';
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.8rem;
 }
 
+.navbar-light .navbar-toggler-icon {
+  border: 5px red;
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+.heroImg {
+  object-fit: center;
+  background-repeat: repeat;
+}
+
+
+.splashText {
+  font-family: 'Times New Roman', Times, serif;
+  font-size:  22px;
+  color: black;
+  background-color: rgba(255, 255, 255, .8);
+  z-index: 25;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  padding: 40px;
+}
