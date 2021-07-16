@@ -69,7 +69,7 @@ function App() {
         id: 3,
         user_id : 3,
         produce_title : "Strawberries by the basket",
-        produce_info: "We have our small strawberries available, probalby only for this week. Super sweet!",
+        produce_info: "We have our small strawberries available, probably only for this week. Super sweet!",
         quantity: 8,
         price: "4.00",
         measurement: "lb",

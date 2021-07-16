@@ -8,7 +8,8 @@
 }
 
 body {
-  background: linear-gradient(#3CA02E, rgb(38,85,18));
+  background:#3CA02E;
+
 }
 
 .navstyle {
@@ -53,7 +54,7 @@ body {
 
 #feedPage {
   height: 100vh;
-  background: linear-gradient(#3CA02E, rgb(38,85,18));
+  /* background: linear-gradient(#3CA02E, rgb(38,85,18)); */
   font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: 700;
 }
@@ -86,24 +87,40 @@ body {
 
 .feedBtm {
   display: flex;
+  text-align: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 .produceBtn {
   background-color: #3CA02E;
-  padding: 3px 5px;
+  padding: 3px 8px;
   border-radius: 4px;
-  font-family: 'Corben', 'Cooper Black', sans-serif;
+  font-family: 'Roboto';
   font-weight: 700;
   color: white;
   line-height: 30px;
+  border: none;
+  align-self: flex-end;
+  justify-self: center;
 }
 
 .produceTitle {
   line-height: 30px;
   padding: 3px 0px;
   font-weight: 700;
+}
+
+.modalBox {
+  background-color: none;
+}
+
+.modalName {
+  font-family: 'Corben', 'Cooper Black', serif;
+  font-weight: 700;
+  color: #3CA02E;
+  text-align: left;
+  margin:auto;
 }
 
 .messageRow {
@@ -125,4 +142,5 @@ body {
   padding: 0 10px;
   border-radius: 5px;
 }
+
 

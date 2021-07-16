@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button , Navbar, Nav, Form, FormControl} from 'react-bootstrap';
+import { Button , Navbar, Nav, Form, FormControl, Divider} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 const Sitebar = (props) => {
@@ -23,8 +23,8 @@ const Sitebar = (props) => {
           <Navbar.Brand className="navstyle" href="#home">backyard</Navbar.Brand> 
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" bg="lite"/>
-        <Navbar.Collapse id="basic-navbar-nav">
-            <Nav variant="main" className="navstyle mr-auto">
+        <Navbar.Collapse id="basic-navbar-nav" >
+            <Nav variant="main" className="navstyle mr-auto" >
             <Link to="/messages" style={{textDecoration: "none"}}> 
               <Nav.Link className="navstyle" variant="main" href="#home">messages</Nav.Link>
             </Link>
@@ -34,10 +34,10 @@ const Sitebar = (props) => {
             <Nav.Link className="navstyle" href="#link">your produce</Nav.Link>
             <Nav.Link className="navstyle" href="#link">profile</Nav.Link>
             </Nav>
-            <Form inline>
+            {/* <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
             <Button variant="flat">Search</Button>
-            </Form>
+            </Form> */}
         </Navbar.Collapse>
         </Navbar>
     </div>
