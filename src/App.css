@@ -7,6 +7,10 @@
   text-align: left;
 }
 
+body {
+  background: linear-gradient(#3CA02E, rgb(38,85,18));
+}
+
 .navstyle {
   font-family: 'Corben';
   color: #3CA02E !important;
@@ -46,3 +50,79 @@
   text-align: center;
   padding: 40px;
 }
+
+#feedPage {
+  height: 100vh;
+  background: linear-gradient(#3CA02E, rgb(38,85,18));
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 700;
+}
+
+.feedItem {
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 35px;
+}
+
+.feedTitle {
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 30px;
+}
+
+.feedInfo{
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: white;
+  font-weight: 500;
+}
+
+.feedImg {
+  height: 100vw;
+  object-fit: cover;
+}
+
+
+.feedBtm {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.produceBtn {
+  background-color: #3CA02E;
+  padding: 3px 5px;
+  border-radius: 4px;
+  font-family: 'Corben', 'Cooper Black', sans-serif;
+  font-weight: 700;
+  color: white;
+  line-height: 30px;
+}
+
+.produceTitle {
+  line-height: 30px;
+  padding: 3px 0px;
+  font-weight: 700;
+}
+
+.messageRow {
+
+  padding-left: 15px;
+  margin: auto;
+  display: flex;
+}
+
+.msgIcon {
+  border-radius: 5px;
+
+}
+
+.msgText {
+  background-color: #707070;
+  line-height: 30px;
+  margin-left: 10px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Button , Navbar, Nav, NavDropdown, Form, FormControl} from 'react-bootstrap';
+import { Button , Navbar, Nav, Form, FormControl} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 const Sitebar = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -18,11 +19,18 @@ const Sitebar = (props) => {
  
 
       <Navbar  bg="light" expand="xl" style={{zIndex: 5}}>
-        <Navbar.Brand className="navstyle" href="#home">backyard</Navbar.Brand>
+        <Link to="/" style={{textDecoration: "none"}}> 
+          <Navbar.Brand className="navstyle" href="#home">backyard</Navbar.Brand> 
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" bg="lite"/>
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav variant="main" className="navstyle mr-auto">
-            <Nav.Link className="navstyle" variant="main" href="#home">messages</Nav.Link>
+            <Link to="/messages" style={{textDecoration: "none"}}> 
+              <Nav.Link className="navstyle" variant="main" href="#home">messages</Nav.Link>
+            </Link>
+            <Link to="/feed" style={{textDecoration: "none"}}>
+              <Nav.Link className="navstyle" href="#link">feed</Nav.Link>
+            </Link>
             <Nav.Link className="navstyle" href="#link">your produce</Nav.Link>
             <Nav.Link className="navstyle" href="#link">profile</Nav.Link>
             </Nav>
