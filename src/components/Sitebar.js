@@ -23,14 +23,16 @@ const Sitebar = (props) => {
           <Navbar.Brand className="navstyle" href="#home">backyard</Navbar.Brand> 
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" bg="lite"/>
+
         <Navbar.Collapse id="basic-navbar-nav" >
             <Nav variant="main" className="navstyle mr-auto" >
             <Link to="/messages" style={{textDecoration: "none"}}> 
-              <Nav.Link className="navstyle" variant="main" href="#home">messages</Nav.Link>
+              <Nav.Link className="navstyle" variant="main" href="/messages">messages</Nav.Link>
             </Link>
             <Link to="/feed" style={{textDecoration: "none"}}>
               <Nav.Link className="navstyle" href="#link">feed</Nav.Link>
             </Link>
+
             <Nav.Link className="navstyle" href="#link">your produce</Nav.Link>
             <Nav.Link className="navstyle" href="#link">profile</Nav.Link>
             </Nav>

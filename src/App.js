@@ -2,11 +2,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Sitebar from './components/Sitebar';
 import Splash from './components/Splash';
+
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Link, Switch } from "react-router-dom";
 import MessagesMenu from './components/MessagesMenu';
 import Feed from './components/Feed';
 import './App.css';
+// import { ChatEngine } from 'react-chat-engine';
+import Message from './components/Message';
 
 
 function App() {
@@ -106,7 +109,9 @@ function App() {
 
 
   return (
+    <Router>
     <div className="App">
+
       <Router >
         <Sitebar />
 
@@ -114,15 +119,16 @@ function App() {
           <Route exact path="/">
             <Splash />
           </Route>
-          <Route exact path="/messages">
-            <MessagesMenu messages={messages} users={users} />
-          </Route>
+          
+          <Route path='/messages' exact component={Message} messages={messages} users={users}/>
+
           <Route exact path="/feed">
             <Feed messages={messages} users={users}/>
           </Route>
         </Switch>
         
       </Router >
+
     </div>
   );
 }
