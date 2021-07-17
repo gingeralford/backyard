@@ -6,6 +6,7 @@ import Splash from './components/Splash';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Route, Link, Switch } from "react-router-dom";
 import MessagesMenu from './components/MessagesMenu';
+import Profile from './components/Profile';
 import Feed from './components/Feed';
 import './App.css';
 // import { ChatEngine } from 'react-chat-engine';
@@ -21,7 +22,7 @@ function App() {
       username: "Sunset Hills Farm",
       email: "sunsethills@email.com",
       password: "stuff",
-      bio: "",
+      bio: "We have a 12 acre farm just outside of Anderson, IN where we grow produce for all 4 seasons. Our kids love to contribute...it's a family affair. Reach out at any time for more information on our growing processes.",
       lat_long: "39.15803027800127, -86.53611144457453",
       location: "0.5mi",
       rating: 4.0,
@@ -109,7 +110,7 @@ function App() {
 
 
   return (
-    <Router>
+
     <div className="App">
 
       <Router >
@@ -124,6 +125,9 @@ function App() {
 
           <Route exact path="/feed">
             <Feed messages={messages} users={users}/>
+          </Route>
+          <Route exact path="/profile">
+            <Profile messages={messages} users={users}/>
           </Route>
         </Switch>
         

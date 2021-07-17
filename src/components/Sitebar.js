@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Button , Navbar, Nav, Form, FormControl, Divider} from 'react-bootstrap';
+import { Navbar, Nav, } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 const Sitebar = (props) => {
   const [collapsed, setCollapsed] = useState(true);
 
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  const toggleNavbar = () => {
+    console.log('collapse')
+    setCollapsed(!collapsed)};
 
   return (
     <div>
@@ -18,7 +20,7 @@ const Sitebar = (props) => {
         </style>
  
 
-      <Navbar  bg="light" expand="xl" style={{zIndex: 5}}>
+      <Navbar collapseOnSelect bg="light" expand="xl" style={{zIndex: 5}}>
         <Link to="/" style={{textDecoration: "none"}}> 
           <Navbar.Brand className="navstyle" href="#home">backyard</Navbar.Brand> 
         </Link>
@@ -33,8 +35,11 @@ const Sitebar = (props) => {
               <Nav.Link className="navstyle" href="#link">feed</Nav.Link>
             </Link>
 
-            <Nav.Link className="navstyle" href="#link">your produce</Nav.Link>
-            <Nav.Link className="navstyle" href="#link">profile</Nav.Link>
+            {/* <Nav.Link className="navstyle" href="#link" onClick={toggleNavbar} >your produce</Nav.Link> */}
+            
+            <Link to="/profile" style={{textDecoration: "none"}}>
+              <Nav.Link className="navstyle" href="#link">profile</Nav.Link>
+            </Link>
             </Nav>
             {/* <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
