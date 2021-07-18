@@ -88,7 +88,7 @@ h1 {
   padding-right: 8px;
   background-color: white;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .feedImg {
@@ -170,10 +170,18 @@ h1 {
 
 .profileInfo {
   padding-top: 12px;
-  padding-left: 12px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 12px;
   background-color: white;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 15pt
+}
+
+.profileTitle {
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 30px;
+  background-color: white;
 }
 
