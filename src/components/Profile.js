@@ -13,8 +13,17 @@ const Profile = (props) => {
 
             <div className="profileInfo">{users[0].bio}</div>
             <div style={{ height: "20px"}}></div>
-            <div className="feedTitle"><b>Current Produce</b></div>
 
+            <div className="profileTitle"><b>Current Produce</b></div>
+            <div className="messageRow">
+                <div className="msgText">
+                    <img src={image0} alt="produce" width="30px" height="30px" className="msgIcon"/>
+                    
+                    {users[0].produce[0].produce_title}
+                </div>
+            </div>
+            <div style={{ height: "20px"}}></div>
+            <div className="profileTitle"><b>Previous Produce</b></div>
             <div className="messageRow">
                 <div className="msgText">
                     <img src={image0} alt="produce" width="30px" height="30px" className="msgIcon"/>
