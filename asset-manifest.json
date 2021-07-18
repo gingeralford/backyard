@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/gingeralford/backyard/static/css/main.18e353f8.chunk.css",
+    "main.js": "/gingeralford/backyard/static/js/main.bc0d5e76.chunk.js",
+    "main.js.map": "/gingeralford/backyard/static/js/main.bc0d5e76.chunk.js.map",
+    "runtime-main.js": "/gingeralford/backyard/static/js/runtime-main.44b6e4f9.js",
+    "runtime-main.js.map": "/gingeralford/backyard/static/js/runtime-main.44b6e4f9.js.map",
+    "static/css/2.f9240ef9.chunk.css": "/gingeralford/backyard/static/css/2.f9240ef9.chunk.css",
+    "static/js/2.6d48e83f.chunk.js": "/gingeralford/backyard/static/js/2.6d48e83f.chunk.js",
+    "static/js/2.6d48e83f.chunk.js.map": "/gingeralford/backyard/static/js/2.6d48e83f.chunk.js.map",
+    "static/js/3.b668d51d.chunk.js": "/gingeralford/backyard/static/js/3.b668d51d.chunk.js",
+    "static/js/3.b668d51d.chunk.js.map": "/gingeralford/backyard/static/js/3.b668d51d.chunk.js.map",
+    "index.html": "/gingeralford/backyard/index.html",
+    "static/css/2.f9240ef9.chunk.css.map": "/gingeralford/backyard/static/css/2.f9240ef9.chunk.css.map",
+    "static/css/main.18e353f8.chunk.css.map": "/gingeralford/backyard/static/css/main.18e353f8.chunk.css.map",
+    "static/js/2.6d48e83f.chunk.js.LICENSE.txt": "/gingeralford/backyard/static/js/2.6d48e83f.chunk.js.LICENSE.txt",
+    "static/media/butterLettuce.ecde6571.jpg": "/gingeralford/backyard/static/media/butterLettuce.ecde6571.jpg",
+    "static/media/App.css": "/gingeralford/backyard/static/media/colorfulProduce.06022309.jpg",
+    "static/media/minus-circle.70ea87f3.svg": "/gingeralford/backyard/static/media/minus-circle.70ea87f3.svg",
+    "static/media/motherDaugherGarden.a33667b3.jpg": "/gingeralford/backyard/static/media/motherDaugherGarden.a33667b3.jpg",
+    "static/media/plus-circle.5d578619.svg": "/gingeralford/backyard/static/media/plus-circle.5d578619.svg",
+    "static/media/sendIcon.aa0f3dcc.svg": "/gingeralford/backyard/static/media/sendIcon.aa0f3dcc.svg",
+    "static/media/strawberries.3e3fa884.jpg": "/gingeralford/backyard/static/media/strawberries.3e3fa884.jpg",
+    "static/media/tomatoes.e33a1028.jpg": "/gingeralford/backyard/static/media/tomatoes.e33a1028.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44b6e4f9.js",
+    "static/css/2.f9240ef9.chunk.css",
+    "static/js/2.6d48e83f.chunk.js",
+    "static/css/main.18e353f8.chunk.css",
+    "static/js/main.bc0d5e76.chunk.js"
+  ]
+}
