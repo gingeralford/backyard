@@ -63,7 +63,7 @@ const Feed = (props) => {
                 
                 <div className="produceBtn" style={{width: "82px"}}>
                     <img src={minus} alt="subtract from cart" onClick={() => {setcartNum(cartNum-1)}}/>
-                    {cartNum}
+                    &nbsp;{cartNum}&nbsp;
                     <img src={plus} alt="add to cart" onClick={() => {setcartNum(cartNum+1)}}/>
                 </div>
             </div>

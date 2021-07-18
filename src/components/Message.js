@@ -8,6 +8,7 @@ const Message = (props) => {
             projectID="9ae134fd-e73a-4469-add6-310207e2f00b"
             userName="HoosierGardener"
             userSecret="secret123"
+            hideUI={true}
         />
 
     </div> );
