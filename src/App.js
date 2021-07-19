@@ -3,7 +3,7 @@ import React from 'react';
 import Sitebar from './components/Sitebar';
 import Splash from './components/Splash';
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import { Route, Link, Switch } from "react-router-dom";
 import MessagesMenu from './components/MessagesMenu';
 import Profile from './components/Profile';
