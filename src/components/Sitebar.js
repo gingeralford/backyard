@@ -23,7 +23,7 @@ const Sitebar = (props) => {
  
 
       <Navbar collapseOnSelect bg="light" expand="xl" style={{zIndex: 5, paddingTop: "4px", paddingBottom: "2px"}}>
-        <Link to="/backyard" style={{textDecoration: "none"}}> 
+        <Link to="/" style={{textDecoration: "none"}}> 
           <Navbar.Brand className="navstyle" href="#home">
             <img src={backyardLogo} height="65px" alt="backyard with shovel logo"/>
           </Navbar.Brand> 
