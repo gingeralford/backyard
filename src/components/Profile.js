@@ -18,8 +18,9 @@ const Profile = (props) => {
             <div style={{ height: "20px"}}></div>
 
             <div className="profileTitle"><b>Current Produce</b></div>
-
+            
             <div className="messageRow">
+            
                 <div className="msgText">
                 <img src={plus} alt="plus" width="30px" height="30px" className="msgIcon" style={{ boxShadow: "none"}}/>
                     Add Produce

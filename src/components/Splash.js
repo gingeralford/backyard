@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Splash = (props) => {
@@ -19,7 +20,9 @@ const Splash = (props) => {
             </p>
 
         </div>
-        <div style={{ height: "400px"}}></div>
+        <div style={{ height: "250px"}}></div>
+            <Link to="/feed"><span className="joinBtn">Join</span></Link>
+        <div style={{ height: "200px"}}></div>
     </div> );
 }
  
