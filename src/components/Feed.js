@@ -12,17 +12,11 @@ import minus from '../assets/minus-circle.svg';
 
 const Feed = (props) => {
     const { users, messages} = props;
-
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
     const [cartNum, setcartNum] = useState(0);
 
-    function twoThings () {
-        
-    }
 
     return ( 
        <>
@@ -58,9 +52,7 @@ const Feed = (props) => {
                 <div className="produceTitle">
                     ${users[0].produce[0].price} {users[0].produce[0].measurement}
                 </div>
-                {/* <div style={{alignSelf: "center"}}>
-                    <div className="produceBtn" onClick={handleShow}>buy</div>
-                </div> */}
+
                 
                 <div className="produceBtn" style={{width: "82px"}}>
                     <img src={minus} alt="subtract from cart" onClick={() => {setcartNum(cartNum-1)}}/>
@@ -110,7 +102,7 @@ const Feed = (props) => {
                     <div className="feedBtm">
                         <div className="produceTitle">{users[3].produce[0].produce_title}
                         <br />
-                        ${users[2].produce[0].price} {users[3].produce[0].measurement}
+                        {users[3].produce[0].price} {users[3].produce[0].measurement}
                         </div>
                         <div style={{alignSelf: "center"}}>
                             <div className="produceBtn" onClick={handleShow}>Contact</div>
