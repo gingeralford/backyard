@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import backyardLogo from '../assets/backyard_logo.png';
+
 
 const Sitebar = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -20,9 +22,11 @@ const Sitebar = (props) => {
         </style>
  
 
-      <Navbar collapseOnSelect bg="light" expand="xl" style={{zIndex: 5}}>
+      <Navbar collapseOnSelect bg="light" expand="xl" style={{zIndex: 5, paddingTop: "4px", paddingBottom: "2px"}}>
         <Link to="/" style={{textDecoration: "none"}}> 
-          <Navbar.Brand className="navstyle" href="#home">backyard</Navbar.Brand> 
+          <Navbar.Brand className="navstyle" href="#home">
+            <img src={backyardLogo} height="65px" alt="backyard with shovel logo"/>
+          </Navbar.Brand> 
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" bg="lite"/>
 

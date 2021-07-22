@@ -2,9 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Sitebar from './components/Sitebar';
 import Splash from './components/Splash';
-
-import { BrowserRouter as Router } from "react-router-dom";
-import { Route, Link, Switch } from "react-router-dom";
+import ScrolltoTop from './components/ScrolltoTop'; 
+import { HashRouter as Router } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import MessagesMenu from './components/MessagesMenu';
 import Profile from './components/Profile';
 import Feed from './components/Feed';
@@ -24,7 +24,7 @@ function App() {
       password: "stuff",
       bio: "We have a 12 acre farm just outside of Anderson, IN where we grow produce for all 4 seasons. Our kids love to contribute...it's a family affair. Reach out at any time for more information on our growing processes.",
       lat_long: "39.15803027800127, -86.53611144457453",
-      location: "0.5mi",
+      location: "1.3mi",
       rating: 4.0,
       rating_count: 14,
       produce: [{
@@ -45,7 +45,7 @@ function App() {
       password: "stuff",
       bio: "Our family of three share a garden with our retired next door neighbor. We have 5 raised beds between us and mostly just grow from spring to late summer. We grow 100% organic!",
       lat_long: "39.15803027800127, -86.53611144457453",
-      location: "0.8mi",
+      location: "0.5mi",
       rating: 4.2,
       rating_count: 21,
       produce: [{
@@ -66,7 +66,7 @@ function App() {
       password: "stuff",
       bio: "We are a community garden located at the corner of East Third and Calliope. We take new members once a month during the growing season, and love to host events for schoolkids to get them involved in local growing.",
       lat_long: "39.15803027800127, -86.53611144457453",
-      location: "1.3mi",
+      location: "1.0mi",
       rating: 4.8,
       rating_count: 180,
       produce: [{
@@ -78,6 +78,27 @@ function App() {
         price: "4.00",
         measurement: "lb",
         picture_url: "./assets/strawberries.jpg"
+      }]
+    },
+    {
+      id: 4,
+      username: "Swanky Smith",
+      email: "smithswanky@email.com",
+      password: "stuff",
+      bio: "We are a community garden located at the corner of East Third and Calliope. We take new members once a month during the growing season, and love to host events for schoolkids to get them involved in local growing.",
+      lat_long: "39.15803027800127, -86.53611144457453",
+      location: "0.8mi",
+      rating: 4.1,
+      rating_count: 10,
+      produce: [{
+        id: 4,
+        user_id : 4,
+        produce_title : "Wild Mint",
+        produce_info: "I have so much wild mint growing in my yard right now. It's totally free, just don't take more than you need.",
+        quantity: 20,
+        price: "FREE",
+        measurement: "",
+        picture_url: ""
       }]
     }
   ]
@@ -114,6 +135,7 @@ function App() {
     <div className="App">
 
       <Router >
+        <ScrolltoTop />
         <Sitebar />
 
         <Switch>

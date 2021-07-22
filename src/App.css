@@ -2,14 +2,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+@keyframes fadeIn {
+  0% { 
+    opacity: 0;
+    margin-top: 40px;
+  }
+  50% { opacity: 0;
+    margin-top: 20px;
+  }
+  100% { opacity: 1;
+          margin-top: 0px;
+  }
+}
+
+@keyframes backgroundZoom {
+  0% { transform: scale(1.1); opacity: 0; }
+  100% {transform: scale(1); opacity: 1; }
+}
 
 .App {
   text-align: left;
 }
 
 body {
-  background:#3CA02E;
-
+  background:#3CA02E  ;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .navstyle {
@@ -18,7 +36,8 @@ body {
   font-family: 'Corben';
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: 2rem;
+  padding: 0px 0px;
+  /* line-height: 2rem; */
 }
 
 h1 {
@@ -46,6 +65,7 @@ h1 {
     position: fixed; 
     top:0; 
     z-index: 0;
+    animation: 5s ease-out 0s 1 backgroundZoom;
 }
 
 
@@ -57,14 +77,44 @@ h1 {
   background-color: rgba(255, 255, 255, .8);
   z-index: 25;
   position: relative;
-  top: 200px;
-  text-align: center;
+  top: 100px;
+  text-align: left;
   padding: 40px;
+  animation: 3s ease-out 0s 1 fadeIn;
 }
+
+.secondBackground {
+    background-image:url('./assets/farmstand.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 101vh;
+    width: 100vw;
+    position: sticky;
+    top:0; 
+    z-index: 0;
+    animation: 5s ease-out 0s 1 backgroundZoom;
+}
+
+.thirdBackground {
+    background-image:url('./assets/peppersLimes.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:right;
+    height: 101vh;
+    width: 100vw;
+    position: sticky;
+    top:0; 
+    z-index: 0;
+    animation: 5s ease-out 0s 1 backgroundZoom;
+}
+
 
 #feedPage {
   height: 100vh;
   /* background: linear-gradient(#3CA02E, rgb(38,85,18)); */
+  max-width: 600px;
+  margin: auto;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: 700;
 }
@@ -76,16 +126,16 @@ h1 {
 }
 
 .feedTitle {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
   line-height: 30px;
   background-color: white;
 }
 
 .feedInfo{
   padding-top: 10px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: white;
   font-weight: 400;
   font-size: 15px;
@@ -93,6 +143,7 @@ h1 {
 
 .feedImg {
   height: 100vw;
+  max-height: 600px;
   object-fit: cover;
 }
 
@@ -117,24 +168,34 @@ h1 {
   justify-self: center;
 }
 
+.produceBtn:hover {
+  background-color: #3CA02E; 
+}
+
 .produceTitle {
   line-height: 30px;
   padding: 3px 0px;
   font-weight: 700;
+  text-align: left;
 }
 
-/* Crap that doesn't work
-.modal {
-  background-color: (rgba(255, 255, 30, .8));
+.joinBtn{
+  display:block;
+  margin: auto;
+  text-align: center;
+  background-color: #3CA02E;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-family: 'Corben';
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+  box-shadow:  4px 4px 15px black;
+  z-index: 5;
+  position: relative;
+  width: 200px;
+  animation: 3s ease-out 0s 1 fadeIn;
 }
-
-.modalBox {
-  background-color: (rgba(255, 255, 30, .8));
-}
-
-.modal-content {
-  background: (rgba(255, 255, 30, .8));
-} */
 
 .modalName {
   font-family: 'Corben', 'Cooper Black', serif;
@@ -156,6 +217,7 @@ h1 {
   border-radius: 5px;
   margin-left: 8px;
   margin-right: 12px;
+  object-fit: cover;
   box-shadow:  4px 0 4px #707070;
 }
 
@@ -165,7 +227,11 @@ h1 {
   margin: auto;
   width: 100%;
   border-radius: 5px;
+}
 
+.profilePage {
+  max-width: 600px;
+  margin: auto;
 }
 
 .profileInfo {
@@ -185,3 +251,25 @@ h1 {
   background-color: white;
 }
 
+.ce-message-bubble.ce-my-message-bubble {
+  background-color: #3CA02E !important;
+  font-family: 'Roboto';
+}
+
+#ce-send-message-button {
+  background-color: #3CA02E !important;
+}
+
+.ce-chat-title-text {
+  color: #3CA02E !important;
+  font-family: 'Roboto';
+}
+
+.ce-chat-subtitle-text {
+  color: #D7D02E;
+  font-weight: 700;
+}
+
+.anticon {
+  color: #D7D02E !important;
+}
