@@ -22,7 +22,7 @@ const Feed = (props) => {
        <>
         <Modal show={show} onHide={handleClose} centered >
             <Modal.Header closeButton>
-            <Modal.Title className="modalName">{users[0].username}
+            <Modal.Title className="modalName">{users[2].username}
             
             <ReactStars
                     count={5}
@@ -45,12 +45,12 @@ const Feed = (props) => {
                 </InputGroup>
             <div className="feedBtm">
                 <div className="produceTitle" style={{ textAlign: "center", marginTop: "20px"}}>
-                    {users[0].produce[0].produce_title}
+                    {users[2].produce[0].produce_title}
                 </div>
             </div>
             <div className="feedBtm">
                 <div className="produceTitle">
-                    ${users[0].produce[0].price} {users[0].produce[0].measurement}
+                    ${users[2].produce[0].price} {users[0].produce[0].measurement}
                 </div>
 
                 

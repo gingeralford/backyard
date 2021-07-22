@@ -8,7 +8,7 @@ import plus from '../assets/plus-circle.svg';
 const Profile = (props) => {
     const {users, messages} = props;
     return ( 
-        <div style={{backgroundColor: "white"}}>
+        <div className="profilePage" style={{backgroundColor: "white"}}>
             <div style={{ height: "20px"}}></div>
             <h1>{users[0].username}</h1>
 

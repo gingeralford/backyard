@@ -42,7 +42,7 @@ const Splash = (props) => {
             {/* <img src={exImg1} alt="screenshot of app - user is selling strawberries" width="140px" style={{ objectFit: "contain"}}/> */}
             </div>
             <div style={{ height: "500px"}}></div>
-            <Link to="/feed"><span className="joinBtn">Join</span></Link>
+            <Link to="/feed" style={{textDecoration: "none"}}><span className="joinBtn">Join</span></Link>
             <div style={{ height: "100px"}}></div>
         
     </div> );

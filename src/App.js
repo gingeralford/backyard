@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Sitebar from './components/Sitebar';
 import Splash from './components/Splash';
+import ScrolltoTop from './components/ScrolltoTop'; 
 import { HashRouter as Router } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
 import MessagesMenu from './components/MessagesMenu';
@@ -134,6 +135,7 @@ function App() {
     <div className="App">
 
       <Router >
+        <ScrolltoTop />
         <Sitebar />
 
         <Switch>

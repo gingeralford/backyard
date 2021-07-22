@@ -25,8 +25,9 @@
 }
 
 body {
-  background:#3CA02E;
-
+  background:#3CA02E  ;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .navstyle {
@@ -99,7 +100,7 @@ h1 {
     background-image:url('./assets/peppersLimes.jpg');
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center;
+    background-position:right;
     height: 101vh;
     width: 100vw;
     position: sticky;
@@ -112,6 +113,8 @@ h1 {
 #feedPage {
   height: 100vh;
   /* background: linear-gradient(#3CA02E, rgb(38,85,18)); */
+  max-width: 600px;
+  margin: auto;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: 700;
 }
@@ -123,16 +126,16 @@ h1 {
 }
 
 .feedTitle {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
   line-height: 30px;
   background-color: white;
 }
 
 .feedInfo{
   padding-top: 10px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: white;
   font-weight: 400;
   font-size: 15px;
@@ -140,6 +143,7 @@ h1 {
 
 .feedImg {
   height: 100vw;
+  max-height: 600px;
   object-fit: cover;
 }
 
@@ -162,6 +166,10 @@ h1 {
   border: none;
   align-self: flex-end;
   justify-self: center;
+}
+
+.produceBtn:hover {
+  background-color: #3CA02E; 
 }
 
 .produceTitle {
@@ -188,19 +196,6 @@ h1 {
   width: 200px;
   animation: 3s ease-out 0s 1 fadeIn;
 }
-
-/* Crap that doesn't work
-.modal {
-  background-color: (rgba(255, 255, 30, .8));
-}
-
-.modalBox {
-  background-color: (rgba(255, 255, 30, .8));
-}
-
-.modal-content {
-  background: (rgba(255, 255, 30, .8));
-} */
 
 .modalName {
   font-family: 'Corben', 'Cooper Black', serif;
@@ -232,7 +227,11 @@ h1 {
   margin: auto;
   width: 100%;
   border-radius: 5px;
+}
 
+.profilePage {
+  max-width: 600px;
+  margin: auto;
 }
 
 .profileInfo {
