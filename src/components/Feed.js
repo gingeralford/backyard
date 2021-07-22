@@ -61,7 +61,7 @@ const Feed = (props) => {
                 </div>
             </div>
             <div style={{ textAlign: "center", marginTop: "20px"}}>
-            <Button className="produceBtn" onClick={handleClose}>
+            <Button className="produceBtn" onClick={handleClose} >
                         Contact <img src={send} alt="send" />
             </Button>
             </div>
